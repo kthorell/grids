@@ -25,14 +25,14 @@ body {
  **/
 
 .container{ 
-margin: 0 auto;
-max-width: 48rem;
-width: 90%;
-}
-.row {
-  max-width: 300px;
-  padding-left: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
   padding-right: 20px;
+  padding-left: 20px;
+}
+
+.row {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -47,15 +47,16 @@ width: 90%;
   clear: both;
 }
 
-.col-3, .col-4, .col-6, .col-12 {
+ .col-3, .col-4, .col-6, .col-12 {
   float: left;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
 
+
 }
 
 /* Mobile defaults */
-@media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 480px) {  
 .col-3, .col-4, .col-6, .col-12 {
   width: 100%;
 }
@@ -64,26 +65,26 @@ width: 90%;
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
   /* 3 columns, 3/12 in % */
-  .col-3,  {
-    width: 25%;
+.col-3, .box-orange {
+  width: 240px;
    
    
   }
   /* 4 columns */
-  .col-4, {
-  	 width: 33.33%;
+.col-4, .box-orange {
+  width: 320px ;
   	 
   }
 
   /* 6 columns */
-  .col-6, {
-     width: 50%;
+.col-6, .box-orange {
+  width: 480px;
     
   }
 
   /* 12 columns */
-  .col-12, {
-  	 width: 100%;
+.col-12, .box-orange {
+  width: 960px;
   	}
   
   
@@ -95,6 +96,7 @@ width: 90%;
   height: 200px;
   text-align: center;
   padding-top: 30px;
+ 
 }
 
 .black {
